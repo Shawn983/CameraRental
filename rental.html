@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camera Rental Request - Snap Professional Rental</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -21,13 +21,14 @@
 
     <section class="camera-listing">
         <h2>Available Cameras</h2>
-        <table>
+      <div class="table-container">    
+        <table class="center">
             <thead>
                 <tr>
-                    <th>Image</th>
-                    <th>Product</th>
-                    <th>Description</th>
-                    <th>Rental Cost</th>
+                    <th style="width:20%">Image</th>
+                    <th style="width:20%">Product</th>
+                    <th style="width:40%">Description</th>
+                    <th style="width:20%">Rental Cost</th>
                 </tr>
             </thead>
             <tbody>
@@ -54,6 +55,7 @@
                 </tr>
             </tbody>
         </table>
+      </div>
     </section>
 
     <section class="rental-form">
@@ -75,13 +77,14 @@
             <input type="email" id="email" name="email" placeholder="Key in your email address here." required>
 
             <input type="submit" value="Submit">
+        
         </form>
+      <p>──────────────────────────────────────── </p>
     </section>
 </main>
 
 <footer>
     <p>&copy; 2023 Snap Professional Rental, Singapore</p>
 </footer>
-
 </body>
 </html>
