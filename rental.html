@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Rental Request - Snap Professional Rental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="rental.html">Rental Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</header>
+
+<main>
+    <h1>Camera Rental Request</h1>
+
+    <section class="camera-listing">
+        <h2>Available Cameras</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Product</th>
+                    <th>Description</th>
+                    <th>Rental Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="Canon_EOS_R3.jpg" width="100" 
+     height="100" alt="Canon EOS R3"></td>
+                    <td>Canon EOS R3</td>
+                    <td>Best professional sports camera with 24.1MP sensor</td>
+                    <td>$50/day</td>
+                </tr>
+                <tr>
+                    <td><img src="nikon z9.jpg" width="100" 
+                           height="100" alt="Nikon Z9"></td>
+                    <td>Nikon Z9</td>
+                    <td>Best all-round professional camera with 45.7MP sensor</td>
+                    <td>$45/day</td>
+                </tr>
+                <tr>
+                    <td><img src="sony a1.jpg" width="100" 
+                           height="100" alt="Sony A1"></td>
+                    <td>Sony A1</td>
+                    <td>High-end camera with 50.1MP sensor</td>
+                    <td>$60/day</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="rental-form">
+        <form>
+            <label for="product">Select a Camera:</label>
+            <select name="product" id="product">
+                <option value="Canon EOS R3">Canon EOS R3</option>
+                <option value="Nikon Z9">Nikon Z9</option>
+                <option value="Sony A1">Sony A1</option>
+            </select>
+
+            <label for="quantity">Rental Duration (in days):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="7" required>
+
+            <label for="requests">Additional Requests:</label>
+            <textarea id="requests" name="requests" placeholder="Enter any requests that you have. We will try to cater to your needs."></textarea>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Key in your email address here." required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2023 Snap Professional Rental, Singapore</p>
+</footer>
+
+</body>
+</html>
